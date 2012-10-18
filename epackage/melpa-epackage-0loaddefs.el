@@ -1,6 +1,6 @@
 
 ;;;### (autoloads (package-build-all package-build-current-recipe
-;;;;;;  package-build-archive) "../package-build" "../package-build.el"
+;;;;;;  package-build-archive) "package-build.el"
 ;;;;;;  (20607 52132))
 ;;; Generated autoloads from ../package-build.el
 
@@ -22,7 +22,7 @@ Build all packages in the `package-build-alist'.
 ;;;***
 
 ;;;### (autoloads (package-filter package-filter-function package-archive-exclude-alist
-;;;;;;  package-archive-enable-alist) "../melpa" "../melpa.el" (20607
+;;;;;;  package-archive-enable-alist) "melpa.el" (20607
 ;;;;;;  52132))
 ;;; Generated autoloads from ../melpa.el
 
@@ -34,7 +34,7 @@ symbol of a package in ARCHIVE to enable.
 
 If no ARCHIVE exists in the alist, all packages are enabled.")
 
-(custom-autoload 'package-archive-enable-alist "../melpa" t)
+(custom-autoload 'package-archive-enable-alist "melpa" t)
 
 (defvar package-archive-exclude-alist nil "\
 Alist of packages excluded by `package-filter'.
@@ -45,7 +45,7 @@ symbol of a package in that archive to exclude.
 Any specified package is excluded regardless of the value of
 `package-archive-enable-alist'")
 
-(custom-autoload 'package-archive-exclude-alist "../melpa" t)
+(custom-autoload 'package-archive-exclude-alist "melpa" t)
 
 (defvar package-filter-function 'package-filter "\
 Optional predicate function used to internally
@@ -57,7 +57,7 @@ The function is called with the arguments PACKAGE VERSION ARCHIVE, where
 PACKAGE is a symbol, VERSION is a vector as produced by `version-to-list', and
 ARCHIVE is the string name of the package archive.")
 
-(custom-autoload 'package-filter-function "../melpa" t)
+(custom-autoload 'package-filter-function "melpa" t)
 
 (defadvice package-compute-transaction (before package-compute-transaction-reverse (package-list requirements) activate compile) "\
 reverse the requirements" (setq requirements (reverse requirements)) (print requirements))
@@ -78,4 +78,3 @@ Filter packages in the associated list for `archive' in
 \(fn PACKAGE VERSION ARCHIVE)" nil nil)
 
 ;;;***
-(provide 'melpa-epackage-0loaddefs)
