@@ -1,0 +1,11 @@
+; Overrides package.el functions
+(require 'melpa)
+(autoload 'package-build-archive                "package-build" "" t)
+(autoload 'package-build-current-recipe         "package-build" "" t)
+(autoload 'package-build-archive-ignore-errors  "package-build" "" t)
+(autoload 'package-build-all                    "package-build" "" t)
+(autoload 'package-build-cleanup                "package-build" "" t)
+(autoload 'package-build-initialize             "package-build" "" t)
+(autoload 'package-build-alist-as-json          "package-build" "" t)
+(autoload 'package-build-archive-alist-as-json  "package-build" "" t)
+(provide 'melpa-epackage-install)

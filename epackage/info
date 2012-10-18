@@ -1,0 +1,22 @@
+Package: melpa
+Section: extensions
+License: None
+Depends: emacs (>= 22)
+Status: unsafe stable
+Archive: MELPA
+Compat:
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Bugs:
+Upstream: Donald Ephraim Curtis <dcurtis@milkbox.net>
+Upstream-Bugs:
+Vcs-Type: git
+Vcs-Url: git://github.com/milkypostman/melpa.git
+Homepage: http://melpa.milkbox.net
+Wiki: http://www.emacswiki.org/emacs/MELPA
+Commentary:
+Description: Customizations to package.el to exclude or include versions
+ Contains defadviced function of package.el to support additional features
+ like will allow you to enable only certain packages or exclude certain
+ packages.
+ .
+ Contains also package-build.el which helps maintaining MELPa packages.
