@@ -1,0 +1,14 @@
+/sync
+/packages/*.tar
+/packages/*.el
+/packages/archive-contents
+/working/*/
+/html/index.html
+/html/index.md
+/epkgs
+**.elc
+.#*
+/archive.json
+/recipes.json
+/recipes/.dirstamp
+/html/updates.rss
