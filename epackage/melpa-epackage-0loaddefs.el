@@ -1,7 +1,7 @@
 
 ;;;### (autoloads (package-build-all package-build-current-recipe
-;;;;;;  package-build-archive) "package-build.el"
-;;;;;;  (20607 52132))
+;;;;;;  package-build-create-recipe package-build-archive) "package-build"
+;;;;;;  "package-build.el" (20903 25466 0 0))
 ;;; Generated autoloads from ../package-build.el
 
 (autoload 'package-build-archive "package-build" "\
@@ -9,21 +9,26 @@ Build a package archive for package NAME.
 
 \(fn NAME)" t nil)
 
+(autoload 'package-build-create-recipe "package-build" "\
+Create a new recipe for package NAME using FETCHER.
+
+\(fn NAME FETCHER)" t nil)
+
 (autoload 'package-build-current-recipe "package-build" "\
 Build archive for the recipe defined in the current buffer.
 
 \(fn)" t nil)
 
 (autoload 'package-build-all "package-build" "\
-Build all packages in the `package-build-alist'.
+Build all packages in the `package-build-recipe-alist'.
 
 \(fn)" t nil)
 
 ;;;***
 
 ;;;### (autoloads (package-filter package-filter-function package-archive-exclude-alist
-;;;;;;  package-archive-enable-alist) "melpa.el" (20607
-;;;;;;  52132))
+;;;;;;  package-archive-enable-alist) "melpa" "melpa.el" (20607
+;;;;;;  59086 0 0))
 ;;; Generated autoloads from ../melpa.el
 
 (defvar package-archive-enable-alist nil "\
